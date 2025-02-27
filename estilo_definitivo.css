@@ -1,0 +1,273 @@
+/* FUENTE DE TODA LA PÁGINA */
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* ENCABEZADO */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-title a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.site-tagline {
+    font-size: 14px;
+}
+
+/* Barra de navegación */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.navigation a:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #585858;
+}
+
+/* IMAGENES */
+img {
+    display:center;
+    margin: 10px;
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    transition: transform 0.3s ease; /* Efecto de transición para el hover */
+    justify-content: center;
+    align-items: center;
+}
+
+img:hover {
+    transform: scale(1.05); /* Efecto de ampliación suave al pasar el cursor */
+}
+
+/* Contenedor de imágenes (centrado y con espacio entre elementos) */
+.contenedor, .contenedor2 {
+    display: flex; 
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap; /* Asegura que las imágenes se adapten en pantallas pequeñas */
+    align-items: center;
+}
+
+/* CATEGORÍAS */
+.category-content {
+    padding: 30px;
+    text-align: center;
+}
+
+.category-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 30px;
+}
+
+.event img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.event img:hover {
+    transform: scale(1.05);
+}
+
+.event h2 {
+    font-size: 1.8em;
+    margin: 10px 0;
+}
+
+.event p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.event a {
+    display: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3e8e41;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event a:hover {
+    background-color: #2e6e31;
+}
+
+/* PIE DE PÁGINA */
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-footer .site-title a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.site-footer .social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.site-footer .social-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* RESPONSIVIDAD */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navigation {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .categories, .events {
+        flex-direction: column;
+    }
+
+    .category img, .event img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+}
+
+
+
+/* Estilos generales de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    
+    color: white;
+    padding: 10px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+/* Barra de navegación */
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+
+
+/* Contenedor de las estrellas */
+.stars {
+    display: flex;                   /* Utilizamos flexbox para colocar las estrellas en una fila */
+    justify-content: center;         /* Centrado horizontal de las estrellas */
+    margin-top: 20px;                 /* Espacio superior */
+}
+/* Estilos para las estrellas */
+.stars {
+    display: flex;
+    cursor: pointer;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd; /* Color gris para las estrellas vacías */
+    margin: 0 5px;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); /* Forma de estrella */
+    transition: background-color 0.3s ease;
+}
+
+/* Al pasar el mouse, resaltar las estrellas con amarillo */
+.star.hover {
+    background-color: #ffcc00; /* Amarillo cuando el usuario pasa el mouse */
+}
+
+/* Al hacer clic, marcar las estrellas como seleccionadas */
+.star.selected {
+    background-color: #ffcc00; /* Amarillo cuando se selecciona la estrella */
+}

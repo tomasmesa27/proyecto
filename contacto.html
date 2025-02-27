@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto_Medellin_hoy </title>
+    <link rel="stylesheet" href="estilo_definitivo.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <h1 class="site-title"><a href="index1.html">MEDELLÍN HOY</a></h1>
+            <p class="site-tagline">Programate pues</p>
+        </div>
+
+        <div class="header-content">
+            <nav class="navigation">
+                <a href="index1.html">INICIO</a>
+                <div class="dropdown">
+                    <a href="#categorías" class="dropbtn">CATEGORÍAS</a>
+                    <div class="dropdown-content">
+                        <a href="cine.html">Cine</a>
+                        <a href="teatro.html">Teatro</a>
+                        <a href="musica.html">Música</a>
+                        <a href="lugares.html">Lugares</a>
+                    </div>
+                </div>
+                <a href="contacto.html">CONTACTO</a>
+            </nav>
+        </div>
+
+        <div class="bloque3">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </header>
+
+    <main>
+        <header>
+            <h1>Formulario de Contacto</h1>
+        </header>
+
+        <section class="contacto">
+            <h2>¡Nos encantaría saber de ti!</h2>
+            <form action="enviar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required placeholder="Tu correo electrónico">
+
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" required placeholder="El motivo de tu mensaje">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <h1 class="site-title"><a href="#">MEDELLIN HOY</a></h1>
+        <p class="site-tagline">Programate pues</p>
+        <ul class="social-links">
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>© 2025 Powered by MEDELLIN HOY</p>
+    </footer>
+
+</body>
+
+</html>
