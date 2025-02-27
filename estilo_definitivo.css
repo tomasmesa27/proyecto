@@ -271,3 +271,44 @@ nav a:hover {
 .star.selected {
     background-color: #ffcc00; /* Amarillo cuando se selecciona la estrella */
 }
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.formulario-contacto {
+    color: #020202;
+    justify-content: center;
+}
+
+form.contacto label,
+form.contacto input,
+form.contacto textarea,
+form.contacto button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+form.contacto input,
+form.contacto textarea {
+    padding: 10px;
+    font-size: 16px;
+}
+
+form.contacto button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form.contacto button:hover {
+    background-color: #0056b3;
+}
