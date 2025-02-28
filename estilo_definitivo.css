@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 /* FUENTE DE TODA LA PÁGINA */
 body {
-    background-color: #333;
-    font-family: Arial, sans-serif;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
     margin: 0;
     padding: 0;
+    color: #020202;
 }
 
 /* ENCABEZADO */
@@ -36,7 +44,7 @@ body {
 .navigation a {
     color: #000000;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: normal;
     transition: color 0.3s, text-decoration 0.3s;
 }
 
@@ -180,6 +188,13 @@ img:hover {
 .site-footer .social-links li a {
     color: #fff;
     text-decoration: none;
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
 }
 
 /* RESPONSIVIDAD */
